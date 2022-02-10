@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import './view.css';
 
 const Error = () => {
   return (
-    <div>This is not the path you´r looking for!</div>
+    <div className='error-page'>This is not the path you´r looking for!</div>
   )
 }
 

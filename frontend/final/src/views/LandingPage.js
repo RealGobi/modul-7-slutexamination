@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import './view.css';
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
+    <div className='landing-page'>LandingPage</div>
   )
 }
 

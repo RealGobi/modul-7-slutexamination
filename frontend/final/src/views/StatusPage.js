@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import './view.css';
 
 const StatusPage = () => {
   return (
-    <div>StatusPage.js</div>
+    <div className='status-page' >StatusPage.js</div>
   )
 }
 

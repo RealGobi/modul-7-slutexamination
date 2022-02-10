@@ -3,7 +3,7 @@ import Navigation from './Routes/Navigation';
 
 function App() {
   return (
-      <div className="App">
+      <div className="App center-everything">
         <Navigation />
       </div>
   );

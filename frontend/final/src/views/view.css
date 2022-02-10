@@ -1,0 +1,26 @@
+
+
+.landing-page, .menu-page, .cart-page, .status-page, .error-page {
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page {
+  background-color: #38846D;
+}
+
+.menu-page {
+  background-color: #F3E4E1;
+}
+
+.cart-page {
+  background-color: #000000B2;
+}
+
+.status-page {
+  background-color: #E5674E;
+}
+
+.error-page {
+  background-color: #ff2a00;
+}

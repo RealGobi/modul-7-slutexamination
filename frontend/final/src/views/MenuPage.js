@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+
+import './view.css';
 
 const MenuPage = () => {
   return (
-    <div>MenuPage</div>
+    <div className='menu-page' >MenuPage</div>
   )
 }
 
