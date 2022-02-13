@@ -1,0 +1,54 @@
+
+.grid-container-menu-item {
+  margin: 15px 10px;
+  color: #2F2926;
+  display: grid;
+  grid-template-columns: 40px auto 50px;
+  grid-template-areas: 
+  "button title price"
+  "button description .";
+}
+
+.button-menu-item {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;  
+  width: 32px;  
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #2F2926;
+  color: white;
+  cursor: pointer;
+}
+
+.dot{
+  display: flex;
+}
+.title-menu-item {
+  grid-area: title;
+  font-family: 'PT Serif', serif;
+  font-size: 1.5rem;
+  flex: 1;
+  display: flex;
+}
+
+.title-menu-item::after {
+    content: '';
+    border-bottom: dashed 1px black;
+    flex: 1;
+}
+
+.price-menu-item {
+  grid-area: price;
+  font-family: 'PT Serif', serif;
+  font-size: 1.5rem;
+}
+
+.description-menu-item {
+  grid-area: description;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  line-height: 15.6px;
+}

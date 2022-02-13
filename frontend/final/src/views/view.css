@@ -7,10 +7,45 @@
 
 .landing-page {
   background-color: #38846D;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.landing-page span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu-page {
   background-color: #F3E4E1;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+}
+
+#foot {
+  position: absolute;
+  bottom: -4px;
+}
+
+.menu-container {
+  margin-top: 115px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-menu {
+  font-family: 'PT Serif', serif;
+  font-size: 42px;
+  line-height: 50.4px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .cart-page {
