@@ -10,14 +10,22 @@ import {ReactComponent as FooterBg} from '../assets/graphics/graphics-footer.svg
 
 // import of css
 import './view.css';
+import CartButton from '../components/CartButton/CartButton';
+import Popup from '../components/PopUp/Popup';
+import CartPage from './CartPage';
 
 const MenuPage = () => {
+  // get menu from api
   const [menu, setMenu] = useState([]);
+
+  // handle open or cloose popup
+  const [isShow, setIsShow] = useState(false);
+
+  // set error
   const [error, setError] = useState([]);
 
-  console.log(menu);
-
   useEffect(() => {
+    // fetch on page load
     fetchMenu()
   }, [])
   
@@ -46,6 +54,12 @@ const MenuPage = () => {
     <div className='menu-page' >
       <span id='top'>
         <HeaderBg />
+        <span onClick={()=> setIsShow(true)}>
+          <CartButton />
+        </span>
+        <Popup trigger={isShow} close={()=> setIsShow(false)}>
+          rgergerger
+        </Popup>
       </span>
         <div className='menu-container'>
           <h1 className='header-menu'>Meny</h1>

@@ -1,0 +1,22 @@
+
+.overlay-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.781);
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.content-popup {
+  position: relative;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #fff;
+  width: 90vw;
+  height: 85vh;
+}

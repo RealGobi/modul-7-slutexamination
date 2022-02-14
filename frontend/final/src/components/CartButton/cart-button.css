@@ -1,0 +1,30 @@
+
+
+.round-button-container{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.round-button, .round-button-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;  
+  width: 52px;  
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #2F2926;
+  color: white;
+  cursor: pointer;
+}
+
+.round-button-counter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #E5674E;
+  font-size: 13px;
+}
