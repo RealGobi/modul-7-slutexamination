@@ -37,6 +37,9 @@
     content: '';
     border-bottom: dashed 1px black;
     flex: 1;
+    margin: 0 10px;
+    position: relative;
+    top: -5px;
 }
 
 .price-menu-item {

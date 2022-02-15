@@ -17,7 +17,7 @@ const Popup = ({trigger, children, close}) => {
     <div className='overlay-popup'>
       <div className='content-popup'>
         { children }
-        <span onClick={close}>X</span>
+        {close && <span onClick={close}>X</span>}
       </div>
     </div>
   ) : null 

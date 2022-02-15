@@ -1,0 +1,38 @@
+
+.cart-card-grid {
+  display: grid;
+  grid-template-columns: auto 10px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "cart-card-title cart-card-buttons"
+  "cart-card-sum cart-card-buttons";
+}
+
+.cart-card-title {
+  grid-area: cart-card-title;
+  font-size: 1.5rem;
+  flex: 1;
+  display: flex;
+}
+
+.cart-card-title::after {
+  content: '';
+  border-bottom: dashed 1px black;
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+  top: -5px;
+}
+
+.cart-card-buttons {
+  grid-area: cart-card-buttons;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -5px;
+}
+
+.cart-card-sum {
+  grid-area: cart-card-sum;
+}
